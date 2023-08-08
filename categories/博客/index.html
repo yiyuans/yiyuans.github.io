@@ -20,12 +20,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#f8f8f8">
   
-  <title>Tag: hexo - Pursue</title>
+  <title>Category: 博客 - Pursue</title>
 
   
     <meta property="og:type" content="website">
 <meta property="og:title" content="Pursue">
-<meta property="og:url" content="http://example.com/tags/hexo/index.html">
+<meta property="og:url" content="http://example.com/categories/%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Pursue">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -95,22 +95,21 @@
 
   
 
-<div class="nav-wrap"><nav class="sub post cap"><a href="/">Recent</a><a href="/categories">Categories</a><a class="active" href="/tags">Tag: hexo</a><a href="/archives">Archives</a></nav></div>
-  <div class="post-list post"><a class="post-card post " href="/2023/07/29/hexo%E6%90%AD%E5%BB%BA/">
-<article class="md-text"><h2 class="post-title">hexo搭建</h2><div class="excerpt"><p>生成静态网站命令
-1hexo g
+<div class="nav-wrap"><nav class="sub post cap"><a href="/">Recent</a><a class="active" href="/categories">Category: 博客</a><a href="/tags">Tags</a><a href="/archives">Archives</a></nav></div>
+  <div class="post-list post"><a class="post-card post " href="/2023/07/29/node%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+<article class="md-text"><h2 class="post-title">node博客</h2><div class="excerpt"><p>创建步骤
+因可能用到npm的包，因此创建package.json
+npm init -y
 
-生成好的public文件夹就直接当成静态网站进行部署
+建立bin文件(可执行文件)，下面创建www.js，作为最开始执行的文件
 
-新建完成后，指定文件夹目录下有：
-node_modules: 依赖包
-public：存放生成的页面
-scaffolds：生成文章的一些模板
-source：用来存放你的文章
-themes：主题
-** _config.yml: 博客的配置文件**
+bin&#x2F;www.js 中主要放置服务器相关代码
 
-构建 -&gt; 用于生成博客的html文件1hexo ...</p></div><div class="meta cap"><span class="cap" id="post-meta">Posted on&nbsp;<time datetime="2023-07-29T05:41:32.000Z">2023-07-29</time></span><span class="cap breadcrumb">博客搭建</span></div></article>
+
+在根目录下创建app.js，作为业务代码
+
+将package.json中的入口文件main修改为
+&quot;main&quot;: &quot;bin/www.j...</p></div><div class="meta cap"><span class="cap" id="post-meta">Posted on&nbsp;<time datetime="2023-07-29T05:41:32.000Z">2023-07-29</time></span><span class="cap breadcrumb">博客</span></div></article>
 </a></div>
   
 
